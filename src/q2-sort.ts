@@ -1,4 +1,4 @@
-export function test(name: string): boolean {
+export function customSort(name: string[]): boolean {
     return true
 }
 

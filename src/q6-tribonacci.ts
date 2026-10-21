@@ -1,4 +1,4 @@
-export function test(name: string): boolean {
-    return true
+export function tribonacci(nums: number[], count: number): number[] {
+    return [];
 }
 

@@ -1,4 +1,4 @@
-export function test(name: string): boolean {
-    return true
+export function autocomplete(search: string, items: string[], maxResult: number): string[] {
+    return [];
 }
 

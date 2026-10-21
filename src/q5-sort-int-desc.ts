@@ -1,4 +1,4 @@
-export function test(name: string): boolean {
+export function sortDigitsDesc(num: number): boolean {
     return true
 }
 
