@@ -4,12 +4,12 @@ import { sortDigitsDesc } from '../src/q5-sort-int-desc';
 
 describe('sortDigitsDesc', () => {
     it.each([
-        // ตัวอย่างจากโจทย์
+        // from doc
         [3008, 8300],
         [1989, 9981],
         [2679, 9762],
         [9163, 9631],
-        // กรณีขอบเพิ่ม
+        // other cases
         [5, 5],
         [1000, 1000],
         [1111, 1111],
@@ -19,6 +19,10 @@ describe('sortDigitsDesc', () => {
         expect(sortDigitsDesc(input)).toBe(expected);
     });
 
-    it.todo('0, เลขติดลบ, ทศนิยม: โจทย์รับเฉพาะจำนวนเต็มบวก ตัดสินใจว่าจะทำอย่างไร');
-    it.todo('ตัวเลขยาวมากจนผลเกิน Number.MAX_SAFE_INTEGER: ผลลัพธ์ยังถูกไหม');
+    it('should throw error for non-integer or negative numbers', () => {
+        expect(() => sortDigitsDesc(-1)).toThrow('Expected a non-negative integer, got -1');
+        expect(() => sortDigitsDesc(3.14)).toThrow('Expected a non-negative integer, got 3.14');
+    });
+
+
 });
