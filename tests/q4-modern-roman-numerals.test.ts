@@ -17,9 +17,9 @@ describe('numberToRoman', () => {
     });
     /* error cases */
     it('should throw error for non-positive integers', () => {
-        expect(() => numberToRoman(0)).toThrowError('Expected a positive integer, got 0');
-        expect(() => numberToRoman(-5)).toThrowError('Expected a positive integer, got -5');
-        expect(() => numberToRoman(3.14)).toThrowError('Expected a positive integer, got 3.14');
+        expect(() => numberToRoman(0)).toThrow('Expected a positive integer, got 0');
+        expect(() => numberToRoman(-5)).toThrow('Expected a positive integer, got -5');
+        expect(() => numberToRoman(3.14)).toThrow('Expected a positive integer, got 3.14');
     });
 });
 
@@ -30,8 +30,8 @@ describe('romanToNumber', () => {
     });
     /* other cases */
     it('should throw error for invalid Roman numerals', () => {
-        expect(() => romanToNumber('')).toThrowError('Empty Roman numeral');
-        expect(() => romanToNumber('ABCD')).toThrowError('Invalid Roman numeral character: "A"');
+        expect(() => romanToNumber('')).toThrow('Empty Roman numeral');
+        expect(() => romanToNumber('ABCD')).toThrow('Invalid Roman numeral character: "A"');
     });
 });
 
