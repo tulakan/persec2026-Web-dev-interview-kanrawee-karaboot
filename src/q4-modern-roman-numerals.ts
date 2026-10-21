@@ -21,8 +21,8 @@ export function numberToRoman(n: number): string {
 
     for (const [value, symbol] of ROMAN_STEPS) {
         while (remaining >= value) {
-            result += symbol;
-            remaining -= value;
+            result = result + symbol;
+            remaining = remaining - value;
         }
     }
     return result;

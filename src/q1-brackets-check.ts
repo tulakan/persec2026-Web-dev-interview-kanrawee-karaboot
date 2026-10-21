@@ -1,6 +1,6 @@
 export function isBalanced(input: string): boolean {
 
-    const temp: string[] = [];
+    const stack: string[] = [];
     const openingBrackets = ['(', '{', '['];
     const closingBrackets = [')', '}', ']'];
     const matchingBrackets: { [key: string]: string } = {
@@ -17,11 +17,11 @@ export function isBalanced(input: string): boolean {
     /* bracket check */
     for (const char of input) {
         if (openingBrackets.includes(char)) {
-            /* if opening bracket -> add to temp */
-            temp.push(char);
+            /* if opening bracket -> add to stack */
+            stack.push(char);
         } else if (closingBrackets.includes(char)) {
             /* if closing bracket -> check if it matches the last opening bracket */
-            if (temp.length === 0 || temp.pop() !== matchingBrackets[char]) {
+            if (stack.length === 0 || stack.pop() !== matchingBrackets[char]) {
                 return false;
             }
         } else {
@@ -30,6 +30,6 @@ export function isBalanced(input: string): boolean {
         }
 
     }
-    /* if temp is empty, all matched */
-    return temp.length === 0;
+    /* if stack is empty, all matched */
+    return stack.length === 0;
 }

@@ -7,7 +7,8 @@ const cases: [number, string][] = [
     [2000, 'MM'],
     [68, 'LXVIII'],
     [109, 'CIX'],
-    // [3999, 'MMMCMXCIX'],
+    [3999, 'MMMCMXCIX'],
+    [4, 'IV'],
 ];
 
 describe('numberToRoman', () => {

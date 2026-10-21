@@ -1,8 +1,7 @@
 {
   "name": "persec2026-Web-dev-interview-kanrawee-karaboot",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Pre-Interview Test for Web Developer Position",
   "scripts": {
     "test": "vitest run",
     "test:watch": "vitest",
