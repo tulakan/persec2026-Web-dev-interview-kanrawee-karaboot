@@ -3,7 +3,7 @@ import { isBalanced } from '../src/q1-brackets-check';
 
 describe('isBalanced', () => {
     it.each([
-        /* from docs */
+        /* from doc */
         ['()', true],
         ['([{}])', true],
         ['([]]', false],
