@@ -1,0 +1,21 @@
+{
+  "name": "persec2026-Web-dev-interview-kanrawee-karaboot",
+  "version": "1.0.0",
+  "description": "Pre-Interview Test for Web Developer Position",
+  "scripts": {
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "demo": "tsx src/demo.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "devDependencies": {
+    "@types/node": "^26.6.5",
+    "tsx": "^4.23.15",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.5"
+  }
+}
