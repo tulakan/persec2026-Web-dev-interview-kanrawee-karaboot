@@ -46,7 +46,12 @@ describe('autocomplete', () => {
     });
 
     it('keeps the original order for items in the same group', () => {
-        const items = ['apple', 'apricot', 'apex'];   // ไม่ได้เรียงตามตัวอักษร
-        expect(autocomplete('ap', items, 10)).toEqual(['apple', 'apricot', 'apex']);
+        const apItems = ['apple', 'apricot', 'apex'];   // ไม่ได้เรียงตามตัวอักษร
+        expect(autocomplete('ap', apItems, 10)).toEqual(['apple', 'apricot', 'apex']);
+    });
+
+    it('sorts results by match position', () => {
+        const items = ['bath', 'Worthy', 'Think'];
+        expect(autocomplete('th', items, 10)).toEqual(['Think', 'Worthy', 'bath']);
     });
 });
