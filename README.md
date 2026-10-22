@@ -18,13 +18,13 @@ npm test
 ## โครงสร้างโปรเจกต์
 ```text
 src/
-├── demo.ts                         # demo file
-├── q1-brackets-check.ts            # Question 1: Bracket validator (Stack)
-├── q2-sort.ts                      # Question 2: Natural alphanumeric sort
-├── q3-autocomplete.ts              # Question 3: Autocomplete with priority ranking
-├── q4-modern-roman-numerals.ts     # Question 4: Roman numeral converter (Int <-> Roman)
-├── q5-sort-int-desc.ts             # Question 5: Sort digits descending
-└── q6-tribonacci.ts                # Question 6: Tribonacci sequence
+├── demo.ts                         
+├── q1-brackets-check.ts            
+├── q2-sort.ts                      
+├── q3-autocomplete.ts              
+├── q4-modern-roman-numerals.ts     
+├── q5-sort-int-desc.ts             
+└── q6-tribonacci.ts                
 tests/
 ├── q1-brackets-check.test.ts            
 ├── q2-sort.test.ts                      
